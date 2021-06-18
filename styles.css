@@ -1,0 +1,82 @@
+/* This is a CSS reset taken from htmlcheatsheet.com which just makes sure our custom CSS is working on a blank slate */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display: block;}
+body { line-height: 1;}
+ol,ul { list-style: none;}
+blockquote,q { quotes: none;}
+blockquote:before,blockquote:after,q:before,q:after { content: ''; content: none;}
+table { border-collapse: collapse; border-spacing: 0;}
+
+/* Now our custom CSS! */
+body {
+    background-color: lavenderblush;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.container {
+    margin: 8px 4px 8px 4px;
+    padding: 6px;
+    background-color:lightskyblue;
+}
+
+.rounded {
+    border-radius: 15px;
+}
+
+.border {
+    border-width: 3px;
+    border-color:orchid;
+}
+
+#flowers + li {
+    color: purple;
+}
+
+#candies li {
+    color:royalblue;
+
+}
+
+.grid-parent {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 15px auto auto 15px;
+    grid-gap: 4px;
+}
+
+.grid-child {
+    text-align: left;
+
+}
+
+.rose {
+    grid-row: 1/4;
+}
+
+.confession {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    font-family: cursive;
+}
+
+.flowerLine {
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+
+
+.secret {
+    display: hidden;
+}
+
+.button {
+    background-color:rebeccapurple;
+    border-radius: 15px;
+    color:white;
+
+}
+
+.button:active {
+    background-color: mediumpurple;
+}
